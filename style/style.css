@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-image: url(../images/bg-intro-desktop.png), -webkit-gradient(linear, left top, left bottom, from(#ff7a7a));
+  background-image: url(../images/bg-intro-desktop.png), linear-gradient(#ff7a7a);
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .content {
+  width: 40%;
+}
+
+.main .content .title {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.main .content .subtitle {
+  line-height: 1.8;
+}
+
+.main .form-section {
+  margin: 4rem 0;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .form-section .btn {
+  color: inherit;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 2rem 0.6rem;
+  text-align: center;
+  color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+}
+
+.main .form-section .btn-color-blue {
+  background-color: #6055a5;
+  font-weight: 600;
+  -webkit-box-shadow: 0 0.8rem 0.1rem rgba(62, 60, 73, 0.4);
+          box-shadow: 0 0.8rem 0.1rem rgba(62, 60, 73, 0.4);
+}
+
+.main .form-section .btn-color-blue .faded {
+  color: #b9b6d3;
+  font-weight: normal;
+}
+
+.main .form-section .btn-color-green {
+  font-size: 1.8rem;
+  background-color: #38cc8c;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  width: 100%;
+  border-bottom: 0.4rem solid #26a76f;
+}
+
+.main .form-section .btn-color-green:hover {
+  opacity: 0.8;
+}
+
+.main .form-section .form {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 4rem;
+}
+
+.main .form-section .form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .form-section .form form input {
+  outline: none;
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #3e3c49;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.main .form-section .form form input::-webkit-input-placeholder {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.main .form-section .form form input:-ms-input-placeholder {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.main .form-section .form form input::-ms-input-placeholder {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.main .form-section .form form input::placeholder {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.main .form-section .form form input:focus {
+  border: 0.2rem solid #6055a5;
+}
+
+.main .form-section .form p {
+  text-align: center;
+  color: #b9b6d3;
+  font-size: 1.2rem;
+}
+
+.main .form-section .form p .danger {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+footer {
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    padding: 10rem 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .container {
+    width: 80vw;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .content {
+    width: 100%;
+  }
+  .main .subtitle {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 7rem;
+  }
+  .main .form-section {
+    width: 100%;
+  }
+  .main .form-section .btn {
+    padding: 2rem 4rem;
+    text-align: center;
+    font-size: inherit;
+  }
+  .main .form-section .btn-color-blue {
+    margin-bottom: 4rem;
+  }
+  .main .form-section .btn-color-blue .faded {
+    font-weight: normal;
+    color: inherit;
+  }
+  .main .form-section .btn-color-green {
+    padding: 1.2rem 0.5rem;
+    letter-spacing: normal;
+  }
+  .main .form-section .form {
+    padding: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

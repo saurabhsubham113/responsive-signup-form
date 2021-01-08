@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$color-red: #ff7a7a;
+$color-green: rgb(56, 204, 140);
+$color-blue: hsl(248, 32%, 49%);
+$clor-dark-blue: hsl(249, 10%, 26%);
+$color-grayish-blue: hsl(246, 25%, 77%);
+$color-white: rgb(255, 255, 255);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+html,
+button,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../images/bg-intro-desktop.png),
+    linear-gradient($color-red);
+  color: $color-white;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .content {
+    width: 40%;
+    .title {
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1;
+      margin-bottom: 3rem;
+    }
+    .subtitle {
+      line-height: 1.8;
+    }
+  }
+  .form-section {
+    margin: 4rem 0;
+    width: 50%;
+    display: flex;
+    // justify-content: space-between;
+    flex-direction: column;
+
+    .btn {
+      color: inherit;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+      padding: 2rem 0.6rem;
+      text-align: center;
+      color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      border-radius: 0.8rem;
+      font-size: 2rem;
+    }
+    .btn-color-blue {
+      background-color: $color-blue;
+      font-weight: 600;
+      box-shadow: 0 0.8rem 0.1rem rgba($clor-dark-blue, 0.4);
+      .faded {
+        color: $color-grayish-blue;
+        font-weight: normal;
+      }
+    }
+    .btn-color-green {
+      font-size: 1.8rem;
+      background-color: $color-green;
+      font-weight: 500;
+      letter-spacing: 0.2rem;
+      width: 100%;
+      border-bottom: 0.4rem solid rgb(38, 167, 111);
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .form {
+      background-color: $color-white;
+      border-radius: 1rem;
+      padding: 4rem;
+      form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          outline: none;
+          padding: 1.6rem;
+          margin-bottom: 2rem;
+          border-radius: 1rem;
+          border: 0.1rem solid $clor-dark-blue;
+          font-weight: 600;
+          font-size: 1.5rem;
+          &::placeholder {
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+          &:focus {
+            border: 0.2rem solid $color-blue;
+          }
+        }
+      }
+
+      p {
+        text-align: center;
+        color: $color-grayish-blue;
+        font-size: 1.2rem;
+        .danger {
+          color: $color-red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 2rem 0;
+}
+@media screen and (max-width: 1080px) {
+  body {
+    padding: 10rem 0;
+    text-align: center;
+    font-size: 2rem;
+    // color: $color-white;
+  }
+  .container {
+    width: 80vw;
+  }
+  .main {
+    flex-direction: column;
+    .content {
+      width: 100%;
+    }
+
+    .subtitle {
+      font-size: 1.8rem;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 7rem;
+    }
+    .form-section {
+      width: 100%;
+      .btn {
+        padding: 2rem 4rem;
+        text-align: center;
+        font-size: inherit;
+      }
+
+      .btn-color-blue {
+        margin-bottom: 4rem;
+        .faded {
+          font-weight: normal;
+          color: inherit;
+        }
+      }
+
+      .btn-color-green {
+        padding: 1.2rem 0.5rem;
+        letter-spacing: normal;
+      }
+    }
+
+    .form-section {
+      .form {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+// @media screen and (max-width: 1080px) {
+//   .main {
+//     .form-section {
+//     }
+//   }
+// }
