@@ -42,11 +42,36 @@
           Try it free 7 days <span class="faded">then $20/mo. thereafter</span>
         </button>
         <div class="form">
-          <form>
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
-            <input type="email" placeholder="email Address" />
-            <input type="password" placeholder="Password" />
+          <form id="form">
+            <div class="form-control">
+              <input type="text" placeholder="First Name" id="firstName" name="firstName" />
+              <div class="img">
+                <img src="images/icon-error.svg" alt="error" />
+              </div>
+              <span class="error-msg">First name cannot be empty</span>
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Last Name" name="lastName" id="lastName" />
+              <div class="img">
+                <img src="images/icon-error.svg" alt="error" />
+              </div>
+              <span class="error-msg">Last name cannot be empty</span>
+            </div>
+            <div class="form-control">
+              <input type="email" placeholder="email" name="email" id="email"/>
+              <div class="img">
+                <img src="images/icon-error.svg" alt="error" />
+              </div>
+              <span class="error-msg">Looks like this is not an email</span>
+            </div>
+            <div class="form-control">
+              <input type="password" placeholder="Password" name="password" id="password" />
+              <div class="img">
+                <img src="images/icon-error.svg" alt="error" />
+              </div>
+              <span class="error-msg">Password cannot be empty</span>
+            </div>
+
             <button class="btn btn-color-green">CLAIM YOUR FREE TRIAL</button>
           </form>
           <p class="toc">
@@ -67,5 +92,7 @@
         >.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -110,9 +110,10 @@ body {
         flex-direction: column;
 
         input {
+          width: 100%;
           outline: none;
           padding: 1.6rem;
-          margin-bottom: 2rem;
+          margin-bottom: 3rem;
           border-radius: 1rem;
           border: 0.1rem solid $clor-dark-blue;
           font-weight: 600;
@@ -124,6 +125,36 @@ body {
           &:focus {
             border: 0.2rem solid $color-blue;
           }
+        }
+      }
+      .form-control.error {
+        input {
+          border: 0.2rem solid;
+          border-color: $color-red;
+        }
+        .img,
+        .error-msg {
+          visibility: visible;
+        }
+      }
+
+      .form-control {
+        position: relative;
+        .img {
+          visibility: hidden;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 1.6rem;
+        }
+        .error-msg {
+          visibility: hidden;
+          position: absolute;
+          top: 6rem;
+          text-align: left;
+          font-size: 1.3rem;
+          color: $color-red;
+          right: 1rem;
         }
       }
 

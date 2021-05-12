@@ -142,9 +142,10 @@ body {
 }
 
 .main .form-section .form form input {
+  width: 100%;
   outline: none;
   padding: 1.6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   border-radius: 1rem;
   border: 0.1rem solid #3e3c49;
   font-weight: 600;
@@ -173,6 +174,38 @@ body {
 
 .main .form-section .form form input:focus {
   border: 0.2rem solid #6055a5;
+}
+
+.main .form-section .form .form-control.error input {
+  border: 0.2rem solid;
+  border-color: #ff7a7a;
+}
+
+.main .form-section .form .form-control.error .img,
+.main .form-section .form .form-control.error .error-msg {
+  visibility: visible;
+}
+
+.main .form-section .form .form-control {
+  position: relative;
+}
+
+.main .form-section .form .form-control .img {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1.6rem;
+}
+
+.main .form-section .form .form-control .error-msg {
+  visibility: hidden;
+  position: absolute;
+  top: 6rem;
+  text-align: left;
+  font-size: 1.3rem;
+  color: #ff7a7a;
+  right: 1rem;
 }
 
 .main .form-section .form p {
